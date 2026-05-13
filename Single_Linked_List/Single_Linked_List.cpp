@@ -1,16 +1,11 @@
-// Single_Linked_List.cpp : This file contains the 'main' function. Program execution begins and ends there.
-//
-
 #include <iostream>
 using namespace std;
 
-// FIXED: Added missing Node structure
 struct Node {
 	int data;
 	Node* nxt;
 };
 
-// FIXED: Added missing function declarations
 void print(Node* head) {
 	Node* temp = head;
 
@@ -22,7 +17,6 @@ void print(Node* head) {
 	cout << "NULL" << endl;
 }
 
-// FIXED: Added dummy functions to remove errors
 void clearScreen() {
 	system("cls");
 }
@@ -259,7 +253,7 @@ void Single_Linked_List() {
 		case 5:
 			clearScreen();
 			Maindashboard();
-			t = false; // FIXED: stop infinite loop
+			t = false;
 			break;
 
 		default:
@@ -271,6 +265,6 @@ void Single_Linked_List() {
 
 int main()
 {
-	Single_Linked_List(); // FIXED: function call
+	Single_Linked_List();
 	return 0;
 }
